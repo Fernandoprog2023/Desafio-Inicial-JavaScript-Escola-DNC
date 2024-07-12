@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+      function somar (valor1, valor2){
+        let resultado = valor1 + valor2;
+        return resultado;
+      }
+      function subtrair (valor1, valor2){
+        let resultado = valor1 - valor2;
+        return resultado;
+      }
+      function dividir (valor1, valor2){
+        let resultado = valor1 / valor2;
+        return resultado;
+      }
+      function converterCelsius (temp){
+        let c= 5/9 * (temp - 32);
+        return c;
+      }
+      function horarioFrances(horabra){
+        let horafrances = horabra + 5;
+        if (horafrances > 24) {
+            horafrances = horafrances - 24;
+            return horafrances; 
+        }
+        else {
+            return horafrances;
+        }
+      }
+      let soma=somar(188, 73);
+      let subtracacao=subtrair(133, 87);
+      let divisao=dividir(192, 12);
+      alert("O Resultado da Soma entre 188 e 73 = " + soma 
+        + "\n" + "O Resultado da Subtração entre 133 e 87 = " + subtracacao 
+        + "\n" + "O Resultado da Divisão entre 192 e 12 = "+divisao);    
+      let F=parseInt(prompt("Digite a Temperarua F: "));
+      let C= converterCelsius(F);
+      alert("A Temperatura Fahrenheit = " + F + " Corresponde em Celsius = " + C);  
+      let hora=parseInt(prompt("Digite a Hora do brasil: "));
+      let horaF=horarioFrances(hora);
+      alert("A hora da França de verão: " + horaF); 
+</script>
+<body>
+    
+</body>
+</html>
